@@ -1,0 +1,192 @@
+/*colorused:
+#478A94
+#427D51
+#839447
+#8A7442*/
+* {
+	box-sizing: border-box;
+
+}
+h1,h2{
+	font-family: 'Lora',serif;
+	line-height: 2.5rem;
+}
+p,a{
+	font-size: 1.5rem;
+	font-family: 'Open Sans',sans-serif;
+}
+a{
+	color: #427D51;
+}
+h1{
+	padding: 3rem 50rem;
+	text-align: center;
+	color: white;
+
+}
+nav svg{margin: 9px;}
+nav {
+	display: flex;
+	background-color: #478A94;
+
+	width: 100%;
+}
+ul{
+	display: inline-flex;
+	list-style: none;
+	 padding: 0;
+}
+li{
+	padding-left: 30rem;
+}
+li a{
+	display: inline-block;
+	
+	text-decoration:none;
+}
+.masthead{
+	display: flex;
+	background-image: url("../img/masthead.jpg");
+	background-size: cover;
+	background-repeat: repeat;
+	height: 200px;
+}
+.container{
+    text-align: center;
+    max-width: 70rem;
+    margin: auto;
+    padding: 1.5rem 0.8rem;
+}
+.container p{
+    text-align: left;
+}
+.box{
+    display: block;
+    padding: 2rem 0;
+    border-bottom: solid 1px #ccc;
+}
+.box p{
+  
+}
+.c1{
+    width: 40%;
+    
+    padding-top: 0rem;
+}
+.thumbnail{
+   display: grid;
+   grid-template-areas: 'a b .'
+'. . .'
+'. . .'
+
+}
+.i1{grid-area: 'a'}
+.i2{grid-area: 'b'}
+.c1 img{
+   max-width: 100%;
+    height: auto;
+}
+
+.thumbnail img{
+    max-width: 100%;
+    height: auto;
+}
+.c1{
+    float: left;
+}
+footer{
+	text-align: center;
+}
+footer a{padding: 5rem;}
+/*tablet view*/
+@media only screen and (max-width: 80rem) and (min-width: 35rem) {
+    html {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+    }
+    h1{
+        text-align: center;
+        margin:auto;
+        padding: 0;
+    }
+    ul{display: inline-flex;}
+    li {
+        width: auto;
+        height: auto;
+    	padding-left: 15rem;
+    }
+
+    .c1 {
+        width: 40%;
+        float: left;
+      margin: 0;
+        padding-right: 2rem; 
+    }
+    p{
+        font-size: 1rem;
+        flex:auto;
+    }
+    .box p{    
+        padding-left: 2rem;
+    padding-right: 2rem;
+    }
+    .thumbnail{
+        grid-template-areas: 'a b'
+        '. .'
+        '. .'
+    }
+    footer a{padding: 3rem;}
+}
+
+
+
+/*mobile view*/
+@media only screen and (max-width: 35rem){
+	html {
+        font-size: 0.75rem; 
+        line-height: 1.4rem;
+    }
+    ul{
+    	display: block;
+
+    }
+    li{
+        padding-right: 
+    	text-align: center;
+    }
+      h1{
+    	margin: auto;
+    	text-align: center;
+    	padding: 0;
+    }
+    .c1{
+        float: none;
+        width: 100%;
+    }
+    footer a{
+        padding:2rem;
+    }
+    .thumbnail{
+        grid-template-areas: 'a'
+        'b'
+        '.'
+        '.'
+        '.'
+        '.'
+    }
+    .box{text-align: left;
+    }
+    p{
+       font-size:  0.75rem;
+       padding: 1rem;
+    }
+    .box figcaption{
+        text-align: center;
+        padding-right: 7rem;
+    }
+    
+}
